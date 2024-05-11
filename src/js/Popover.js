@@ -5,6 +5,7 @@ export default class Popover {
 
   init() {
     const buttonEl = this.container.querySelector(".popover-btn");
+    console.log(buttonEl);
 
     buttonEl.addEventListener("click", (e) => {
       e.preventDefault();

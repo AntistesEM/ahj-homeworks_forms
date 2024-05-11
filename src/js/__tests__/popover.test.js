@@ -11,8 +11,8 @@ const innerHtml = `
     <button class="popover-btn">Click to toggle popover</button>
   </div>`;
 const body = document.querySelector("body");
-body.appendChild(innerHtml);
-const container = document.querySelector(".container");
+body.innerHTML = innerHtml;
+const container = body.querySelector(".container");
 const popover = new Popover(container);
 popover.init();
 
